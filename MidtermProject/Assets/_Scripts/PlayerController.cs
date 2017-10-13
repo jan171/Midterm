@@ -32,10 +32,6 @@ public class PlayerController : MonoBehaviour {
 	public bool deathCheck; 
 	public bool hurt;
 
-	public GameObject bullet;
-	public Transform bulletPoint;
-
-
 
 	void Start () {
 
@@ -109,11 +105,6 @@ public class PlayerController : MonoBehaviour {
 		}
 
 
-		if (Input.GetKeyDown (KeyCode.Z)) {
-
-			Instantiate (bullet, bulletPoint.position, bulletPoint.rotation);
-
-		}
 
 
 	}
