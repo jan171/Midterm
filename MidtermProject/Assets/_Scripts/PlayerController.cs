@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(AudioSource))]
 
@@ -17,7 +18,7 @@ public class PlayerController : MonoBehaviour {
 
 	public AudioClip jumpsfx;
 	public AudioClip coinCollect;
-	public AudioClip splash;
+	public AudioClip damageSfx;
 
 	AudioSource audio;
 
@@ -27,7 +28,7 @@ public class PlayerController : MonoBehaviour {
 
 	//health stats
 	public int curHealth;
-	public int maxHealth = 3;
+	public int maxHealth = 5;
 	public bool deathCheck; 
 	public bool hurt;
 
@@ -53,6 +54,9 @@ public class PlayerController : MonoBehaviour {
 
 		anim.SetBool ("IsGrounded", isGrounded);
 		anim.SetFloat ("Speed", Mathf.Abs(rigidBody.velocity.x));
+		anim.SetBool ("IsAlive", deathCheck);
+		anim.SetBool ("IsDamaged", hurt);
+
 
 		float h = Input.GetAxis ("Horizontal");
 
@@ -96,6 +100,14 @@ public class PlayerController : MonoBehaviour {
 			speed = 400f;
 
 		}
+		if (curHealth > maxHealth) {
+			curHealth = maxHealth;
+		}
+
+		if (curHealth <= 0) {
+			StartCoroutine ("Delayed Start");
+		}
+
 
 		if (Input.GetKeyDown (KeyCode.Z)) {
 
@@ -103,7 +115,14 @@ public class PlayerController : MonoBehaviour {
 
 		}
 
+
 	}
+
+	void OnTriggerEnter2D(Collider2D col){
+		if (col.CompareTag ("KillZone")) {
+			transform.position = respawn.transform.position;
+		}
+}
 
 	void FixedUpdate(){
 
@@ -131,14 +150,20 @@ public class PlayerController : MonoBehaviour {
 		}
 
 	}
-	
-	void OnTriggerEnter2D(Collider2D col) {
+	void Death (){
+		deathCheck = true;
+		Debug.Log ("Player dead");
+		SceneManager.LoadScene ("level1");
 
-		if (col.CompareTag("Respawn")) {
-
-			transform.position = respawn.transform.position;
-			audio.PlayOneShot (splash, 1.0f);
 		}
+	IEnumerator DelayedRestart (){
+		yield return new WaitForSeconds (1);
+		Death ();
 
+	}
+
+	public void Damage (int dmg) {
+		audio.PlayOneShot (damageSfx, 1.0f);
+		curHealth -= dmg;
+	}
 }
-		}

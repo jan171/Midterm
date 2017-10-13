@@ -3,7 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthSystem : MonoBehaviour {
+public class HealthSytem : MonoBehaviour {
+
+	public Sprite fullHealthBar;
+	public Sprite fourfifthsHealthBar;
+	public Sprite threefifthsHealthBar;
+	public Sprite twofifthsHealthBar;
+	public Sprite onefifthHealthBar;
+	public Sprite emptyHealthBar;
+
+	public Image healthUI;
+
+	private PlayerController player;
 
 	// Use this for initialization
 	void Start () {
