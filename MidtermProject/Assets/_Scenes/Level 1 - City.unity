@@ -110,6 +110,7 @@ NavMeshSettings:
   m_NavMeshData: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &18217073 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400006, guid: 0ce4cbc241d3aca4da0b94a0ffa0d51f, type: 2}
@@ -465,6 +466,8 @@ Prefab:
 >>>>>>> b236e320059ada122379102508cffed0decfa631
 =======
 >>>>>>> parent of b236e32... Latest Level Design Level 1
+=======
+>>>>>>> parent of b236e32... Latest Level Design Level 1
 --- !u!1 &373373186
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,7 +613,11 @@ Prefab:
     - target: {fileID: 400004, guid: 57977547c59abb546bbb1501e3c417db, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 19
+=======
+      value: 4
+>>>>>>> parent of b236e32... Latest Level Design Level 1
 =======
       value: 4
 >>>>>>> parent of b236e32... Latest Level Design Level 1
@@ -622,6 +629,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 57977547c59abb546bbb1501e3c417db, type: 2}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &448957400
@@ -726,6 +734,9 @@ RectTransform:
 =======
 --- !u!1001 &508074295
 >>>>>>> parent of b236e32... Latest Level Design Level 1
+=======
+--- !u!1001 &508074295
+>>>>>>> parent of b236e32... Latest Level Design Level 1
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -763,6 +774,7 @@ Prefab:
     - target: {fileID: 400000, guid: ba4eef1c1bb56b444b143beb8d3e30d5, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: b241b59d6a89aff4fbf0bce77e644761, type: 2}
@@ -771,10 +783,14 @@ Prefab:
 =======
       value: 3
 >>>>>>> parent of b236e32... Latest Level Design Level 1
+=======
+      value: 3
+>>>>>>> parent of b236e32... Latest Level Design Level 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ba4eef1c1bb56b444b143beb8d3e30d5, type: 2}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1001 &500821926
 Prefab:
@@ -864,6 +880,8 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ba4eef1c1bb56b444b143beb8d3e30d5, type: 2}
   m_IsPrefabParent: 0
+=======
+>>>>>>> parent of b236e32... Latest Level Design Level 1
 =======
 >>>>>>> parent of b236e32... Latest Level Design Level 1
 --- !u!1 &564754985
@@ -1005,7 +1023,11 @@ Prefab:
     - target: {fileID: 400014, guid: 47d3e747b2e87de4c8358aaa436365ea, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 22
+=======
+      value: 7
+>>>>>>> parent of b236e32... Latest Level Design Level 1
 =======
       value: 7
 >>>>>>> parent of b236e32... Latest Level Design Level 1
@@ -1025,6 +1047,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 47d3e747b2e87de4c8358aaa436365ea, type: 2}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1001 &743039508
 Prefab:
@@ -1222,6 +1245,8 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 =======
 >>>>>>> parent of b236e32... Latest Level Design Level 1
+=======
+>>>>>>> parent of b236e32... Latest Level Design Level 1
 --- !u!1 &845587808
 GameObject:
   m_ObjectHideFlags: 0
@@ -1283,7 +1308,10 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_SortingLayer: 0
+=======
+>>>>>>> parent of b236e32... Latest Level Design Level 1
 =======
 >>>>>>> parent of b236e32... Latest Level Design Level 1
   m_SortingOrder: 0
@@ -1291,6 +1319,7 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_DrawMode: 0
@@ -1495,6 +1524,8 @@ Prefab:
 >>>>>>> b236e320059ada122379102508cffed0decfa631
 =======
 >>>>>>> parent of b236e32... Latest Level Design Level 1
+=======
+>>>>>>> parent of b236e32... Latest Level Design Level 1
 --- !u!1 &1214586943
 GameObject:
   m_ObjectHideFlags: 0
@@ -1605,7 +1636,11 @@ Prefab:
     - target: {fileID: 400004, guid: 57977547c59abb546bbb1501e3c417db, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 16
+=======
+      value: 1
+>>>>>>> parent of b236e32... Latest Level Design Level 1
 =======
       value: 1
 >>>>>>> parent of b236e32... Latest Level Design Level 1
@@ -1655,7 +1690,11 @@ Prefab:
     - target: {fileID: 400004, guid: 57977547c59abb546bbb1501e3c417db, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 21
+=======
+      value: 6
+>>>>>>> parent of b236e32... Latest Level Design Level 1
 =======
       value: 6
 >>>>>>> parent of b236e32... Latest Level Design Level 1
@@ -1663,6 +1702,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 57977547c59abb546bbb1501e3c417db, type: 2}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1001 &1338030884
 Prefab:
@@ -1712,6 +1752,8 @@ Prefab:
   m_IsPrefabParent: 0
 =======
 >>>>>>> parent of b236e32... Latest Level Design Level 1
+=======
+>>>>>>> parent of b236e32... Latest Level Design Level 1
 --- !u!1001 &1348080933
 Prefab:
   m_ObjectHideFlags: 0
@@ -1750,7 +1792,11 @@ Prefab:
     - target: {fileID: 400004, guid: d024aaa09f4080d448d16f62d1a97b0b, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 17
+=======
+      value: 2
+>>>>>>> parent of b236e32... Latest Level Design Level 1
 =======
       value: 2
 >>>>>>> parent of b236e32... Latest Level Design Level 1
@@ -1828,6 +1874,7 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &1471132036
@@ -1975,6 +2022,8 @@ Transform:
 >>>>>>> aefd9b768bc347235f811794d8845305615bb175
 =======
 >>>>>>> parent of b236e32... Latest Level Design Level 1
+=======
+>>>>>>> parent of b236e32... Latest Level Design Level 1
 --- !u!1 &1540940552
 GameObject:
   m_ObjectHideFlags: 0
@@ -2005,6 +2054,7 @@ Transform:
   - {fileID: 1214586944}
   - {fileID: 1413040404}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2257,6 +2307,9 @@ Transform:
 =======
   m_RootOrder: 8
 >>>>>>> parent of b236e32... Latest Level Design Level 1
+=======
+  m_RootOrder: 8
+>>>>>>> parent of b236e32... Latest Level Design Level 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
 --- !u!4 &1752994694 stripped
@@ -2433,7 +2486,11 @@ Prefab:
     - target: {fileID: 400004, guid: 57977547c59abb546bbb1501e3c417db, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 20
+=======
+      value: 5
+>>>>>>> parent of b236e32... Latest Level Design Level 1
 =======
       value: 5
 >>>>>>> parent of b236e32... Latest Level Design Level 1
