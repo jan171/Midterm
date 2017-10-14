@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthSytem : MonoBehaviour {
+public class HealthSystem : MonoBehaviour {
 
 	public Sprite fullHealthBar;
 	public Sprite fourfifthsHealthBar;
