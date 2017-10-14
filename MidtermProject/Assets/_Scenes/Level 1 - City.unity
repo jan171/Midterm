@@ -111,6 +111,7 @@ NavMeshSettings:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
@@ -121,6 +122,8 @@ Transform:
 --- !u!1 &133538112
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> parent of aefd9b7... Merge branch 'master' of https://github.com/jan171/Midterm
 --- !u!1 &123439321
 >>>>>>> aefd9b768bc347235f811794d8845305615bb175
 GameObject:
@@ -184,6 +187,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
 =======
 >>>>>>> aefd9b768bc347235f811794d8845305615bb175
 --- !u!1001 &203601855
@@ -474,6 +478,8 @@ Prefab:
 =======
 >>>>>>> parent of b236e32... Latest Level Design Level 1
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
+=======
+>>>>>>> parent of aefd9b7... Merge branch 'master' of https://github.com/jan171/Midterm
 --- !u!1 &373373186
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,6 +626,7 @@ Prefab:
       propertyPath: m_RootOrder
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
@@ -633,6 +640,9 @@ Prefab:
       value: 4
 >>>>>>> parent of b236e32... Latest Level Design Level 1
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
+=======
+      value: 4
+>>>>>>> parent of aefd9b7... Merge branch 'master' of https://github.com/jan171/Midterm
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 57977547c59abb546bbb1501e3c417db, type: 2}
       propertyPath: m_Name
@@ -644,9 +654,12 @@ Prefab:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
+=======
+>>>>>>> parent of aefd9b7... Merge branch 'master' of https://github.com/jan171/Midterm
 --- !u!1 &448957400
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,6 +756,7 @@ RectTransform:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!1001 &508074295
+<<<<<<< HEAD
 =======
 --- !u!1001 &498367199
 >>>>>>> b236e320059ada122379102508cffed0decfa631
@@ -755,6 +769,8 @@ RectTransform:
 --- !u!1001 &508074295
 >>>>>>> parent of b236e32... Latest Level Design Level 1
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
+=======
+>>>>>>> parent of aefd9b7... Merge branch 'master' of https://github.com/jan171/Midterm
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -793,6 +809,7 @@ Prefab:
       propertyPath: m_RootOrder
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
@@ -810,10 +827,14 @@ Prefab:
       value: 3
 >>>>>>> parent of b236e32... Latest Level Design Level 1
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
+=======
+      value: 3
+>>>>>>> parent of aefd9b7... Merge branch 'master' of https://github.com/jan171/Midterm
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ba4eef1c1bb56b444b143beb8d3e30d5, type: 2}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -914,6 +935,8 @@ Prefab:
 =======
 >>>>>>> parent of b236e32... Latest Level Design Level 1
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
+=======
+>>>>>>> parent of aefd9b7... Merge branch 'master' of https://github.com/jan171/Midterm
 --- !u!1 &564754985
 GameObject:
   m_ObjectHideFlags: 0
@@ -1054,6 +1077,7 @@ Prefab:
       propertyPath: m_RootOrder
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
@@ -1067,6 +1091,9 @@ Prefab:
       value: 7
 >>>>>>> parent of b236e32... Latest Level Design Level 1
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
+=======
+      value: 7
+>>>>>>> parent of aefd9b7... Merge branch 'master' of https://github.com/jan171/Midterm
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 47d3e747b2e87de4c8358aaa436365ea, type: 2}
       propertyPath: m_LocalScale.x
@@ -1083,6 +1110,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 47d3e747b2e87de4c8358aaa436365ea, type: 2}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1289,6 +1317,8 @@ Transform:
 =======
 >>>>>>> parent of b236e32... Latest Level Design Level 1
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
+=======
+>>>>>>> parent of aefd9b7... Merge branch 'master' of https://github.com/jan171/Midterm
 --- !u!1 &845587808
 GameObject:
   m_ObjectHideFlags: 0
@@ -1351,6 +1381,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_SortingLayer: 0
 =======
 >>>>>>> parent of b236e32... Latest Level Design Level 1
@@ -1362,6 +1393,9 @@ SpriteRenderer:
 =======
 >>>>>>> parent of b236e32... Latest Level Design Level 1
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
+=======
+  m_SortingLayer: 0
+>>>>>>> parent of aefd9b7... Merge branch 'master' of https://github.com/jan171/Midterm
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d90a8faf6fb9540b084ef2825cc3a5dc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1370,15 +1404,19 @@ SpriteRenderer:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
+=======
+>>>>>>> parent of aefd9b7... Merge branch 'master' of https://github.com/jan171/Midterm
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+<<<<<<< HEAD
 =======
 --- !u!1001 &915633115
 Prefab:
@@ -1580,6 +1618,8 @@ Prefab:
 =======
 >>>>>>> parent of b236e32... Latest Level Design Level 1
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
+=======
+>>>>>>> parent of aefd9b7... Merge branch 'master' of https://github.com/jan171/Midterm
 --- !u!1 &1214586943
 GameObject:
   m_ObjectHideFlags: 0
@@ -1691,6 +1731,7 @@ Prefab:
       propertyPath: m_RootOrder
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
@@ -1704,6 +1745,9 @@ Prefab:
       value: 1
 >>>>>>> parent of b236e32... Latest Level Design Level 1
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
+=======
+      value: 1
+>>>>>>> parent of aefd9b7... Merge branch 'master' of https://github.com/jan171/Midterm
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 57977547c59abb546bbb1501e3c417db, type: 2}
       propertyPath: m_Name
@@ -1751,6 +1795,7 @@ Prefab:
       propertyPath: m_RootOrder
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
@@ -1764,10 +1809,14 @@ Prefab:
       value: 6
 >>>>>>> parent of b236e32... Latest Level Design Level 1
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
+=======
+      value: 6
+>>>>>>> parent of aefd9b7... Merge branch 'master' of https://github.com/jan171/Midterm
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 57977547c59abb546bbb1501e3c417db, type: 2}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1826,6 +1875,8 @@ Prefab:
 =======
 >>>>>>> parent of b236e32... Latest Level Design Level 1
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
+=======
+>>>>>>> parent of aefd9b7... Merge branch 'master' of https://github.com/jan171/Midterm
 --- !u!1001 &1348080933
 Prefab:
   m_ObjectHideFlags: 0
@@ -1865,6 +1916,7 @@ Prefab:
       propertyPath: m_RootOrder
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
@@ -1878,6 +1930,9 @@ Prefab:
       value: 2
 >>>>>>> parent of b236e32... Latest Level Design Level 1
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
+=======
+      value: 2
+>>>>>>> parent of aefd9b7... Merge branch 'master' of https://github.com/jan171/Midterm
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: d024aaa09f4080d448d16f62d1a97b0b, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1955,6 +2010,7 @@ SpriteRenderer:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
@@ -2011,12 +2067,15 @@ Transform:
   m_PrefabInternal: {fileID: 1045009620}
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> parent of aefd9b7... Merge branch 'master' of https://github.com/jan171/Midterm
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+<<<<<<< HEAD
 =======
 >>>>>>> aefd9b768bc347235f811794d8845305615bb175
 --- !u!1001 &1509168492
@@ -2108,6 +2167,8 @@ Transform:
 =======
 >>>>>>> parent of b236e32... Latest Level Design Level 1
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
+=======
+>>>>>>> parent of aefd9b7... Merge branch 'master' of https://github.com/jan171/Midterm
 --- !u!1 &1540940552
 GameObject:
   m_ObjectHideFlags: 0
@@ -2138,6 +2199,7 @@ Transform:
   - {fileID: 1214586944}
   - {fileID: 1413040404}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -2400,6 +2462,9 @@ Transform:
   m_RootOrder: 8
 >>>>>>> parent of b236e32... Latest Level Design Level 1
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
+=======
+  m_RootOrder: 8
+>>>>>>> parent of aefd9b7... Merge branch 'master' of https://github.com/jan171/Midterm
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
 --- !u!4 &1752994694 stripped
@@ -2577,6 +2642,7 @@ Prefab:
       propertyPath: m_RootOrder
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
@@ -2590,6 +2656,9 @@ Prefab:
       value: 5
 >>>>>>> parent of b236e32... Latest Level Design Level 1
 >>>>>>> 5ce5b9afac3e56c49833d9d6319743743b549641
+=======
+      value: 5
+>>>>>>> parent of aefd9b7... Merge branch 'master' of https://github.com/jan171/Midterm
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 57977547c59abb546bbb1501e3c417db, type: 2}
       propertyPath: m_Name
