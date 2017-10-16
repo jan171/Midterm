@@ -12,6 +12,7 @@ TagManager:
   - Attack
   - Bat
   - Enemy2
+  - BloodBottle
   layers:
   - Default
   - TransparentFX

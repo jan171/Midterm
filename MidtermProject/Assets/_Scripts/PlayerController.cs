@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour {
 
 	public AudioClip jumpsfx;
 	public AudioClip batCollect;
+	public AudioClip bottleCollect;
 	public AudioClip damageSfx;
 	public AudioClip recoverHealth;
 	public AudioClip levelTrigger;
@@ -134,6 +135,12 @@ public class PlayerController : MonoBehaviour {
 			Destroy(col.gameObject);
 			gm.points += 1;
 			audio.PlayOneShot (batCollect, 1.0f);
+		}
+
+		if (col.CompareTag ("BloodBottle")) {
+			Destroy(col.gameObject);
+			gm.points += 2;
+			audio.PlayOneShot (bottleCollect, 1.0f);
 		}
 
 
