@@ -22,9 +22,11 @@ public class PlayerController : MonoBehaviour {
 
 	AudioSource audio;
 
+
 	public GameObject respawn;
 
 	private GameMaster gm;
+
 
 	//health stats
 	public int curHealth;
@@ -101,7 +103,7 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		if (curHealth <= 0) {
-			StartCoroutine ("Delayed Start");
+			StartCoroutine ("DelayedRestart");
 		}
 
 
@@ -113,6 +115,10 @@ public class PlayerController : MonoBehaviour {
 		if (col.CompareTag ("KillZone")) {
 			transform.position = respawn.transform.position;
 		}
+
+
+
+
 }
 
 	void FixedUpdate(){
@@ -141,13 +147,27 @@ public class PlayerController : MonoBehaviour {
 		}
 
 	}
+
+
+	public GameObject vampireDeathEffect;
+	public AudioClip vampireDeathSound;
+
+
 	void Death (){
+
+		audio.PlayOneShot (vampireDeathSound, 1.0f);
 		deathCheck = true;
+		audio.PlayOneShot (vampireDeathSound, 1.0f);
+		Instantiate (vampireDeathEffect, transform.position, transform.rotation);
+		Destroy (gameObject);
+
+
 		Debug.Log ("Player dead");
-		SceneManager.LoadScene ("level1");
+
+		SceneManager.LoadScene ("Forest");
 
 		}
-	IEnumerator DelayedRestart (){
+	IEnumerator DelayedRestart() {
 		yield return new WaitForSeconds (1);
 		Death ();
 

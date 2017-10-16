@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground Check
+  - Game Master
+  - Victim
+  - Enemy
+  - Enemy1 Raycast
   layers:
   - Default
   - TransparentFX
@@ -14,10 +18,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Item
+  - Victim
+  - Enemy
   - 
   - 
   - 
