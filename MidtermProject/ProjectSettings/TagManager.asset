@@ -9,6 +9,9 @@ TagManager:
   - Victim
   - Enemy
   - Enemy1 Raycast
+  - Attack
+  - Bat
+  - Enemy2
   layers:
   - Default
   - TransparentFX

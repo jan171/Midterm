@@ -17,8 +17,10 @@ public class PlayerController : MonoBehaviour {
 	private Animator anim;
 
 	public AudioClip jumpsfx;
-	public AudioClip coinCollect;
+	public AudioClip batCollect;
 	public AudioClip damageSfx;
+	public AudioClip recoverHealth;
+	public AudioClip levelTrigger;
 
 	AudioSource audio;
 
@@ -28,11 +30,13 @@ public class PlayerController : MonoBehaviour {
 	private GameMaster gm;
 
 
-	//health stats
+
 	public int curHealth;
 	public int maxHealth = 5;
 	public bool deathCheck; 
 	public bool hurt;
+
+	public GameObject gameOverScreen;
 
 
 	void Start () {
@@ -44,7 +48,7 @@ public class PlayerController : MonoBehaviour {
 
 		gm = GameObject.FindGameObjectWithTag ("Game Master").GetComponent<GameMaster> (); //get access to GameMaster Script
 
-
+		gameOverScreen.SetActive (false);
 
 	}
 
@@ -106,7 +110,12 @@ public class PlayerController : MonoBehaviour {
 			StartCoroutine ("DelayedRestart");
 		}
 
+		if (Input.GetKeyDown (KeyCode.R)) {
 
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+			Time.timeScale = 1;
+
+		}
 
 
 	}
@@ -116,8 +125,25 @@ public class PlayerController : MonoBehaviour {
 			transform.position = respawn.transform.position;
 		}
 
+		if (col.CompareTag("Attack")){
+			gm.points += 1;
+
+		}
+
+		if (col.CompareTag ("Bat")) {
+			Destroy(col.gameObject);
+			gm.points += 1;
+			audio.PlayOneShot (batCollect, 1.0f);
+		}
 
 
+		if (col.CompareTag ("trigger box")) {
+
+			audio.PlayOneShot (levelTrigger, 1.0f);
+
+			SceneManager.LoadScene ("Level2");
+
+		}
 
 }
 
@@ -155,8 +181,17 @@ public class PlayerController : MonoBehaviour {
 
 	void Death (){
 
-		audio.PlayOneShot (vampireDeathSound, 1.0f);
+	
 		deathCheck = true;
+
+
+		gameOverScreen.SetActive(true);
+
+		if (deathCheck){
+			Debug.Log("PLayer Dead");
+
+			Time.timeScale = 0;
+
 		audio.PlayOneShot (vampireDeathSound, 1.0f);
 		Instantiate (vampireDeathEffect, transform.position, transform.rotation);
 		Destroy (gameObject);
@@ -167,6 +202,7 @@ public class PlayerController : MonoBehaviour {
 		SceneManager.LoadScene ("Forest");
 
 		}
+	}
 	IEnumerator DelayedRestart() {
 		yield return new WaitForSeconds (1);
 		Death ();
@@ -177,4 +213,9 @@ public class PlayerController : MonoBehaviour {
 		audio.PlayOneShot (damageSfx, 1.0f);
 		curHealth -= dmg;
 	}
+	public void Recover (int dmg){
+		curHealth += dmg;
+
+	}
+		
 }

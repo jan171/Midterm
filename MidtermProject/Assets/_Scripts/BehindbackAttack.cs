@@ -11,6 +11,7 @@ public class BehindbackAttack : MonoBehaviour {
 
 	AudioSource audio;
 	private Rigidbody2D playerBody;
+	private PlayerController player;
 	public float bounceOnVictim;
 
 	public GameObject victimDeathEffect;
@@ -21,19 +22,18 @@ public class BehindbackAttack : MonoBehaviour {
 		audio = GetComponent<AudioSource> ();
 		playerBody = GameObject.FindGameObjectWithTag ("Player").GetComponent<Rigidbody2D> ();
 
+		player = GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController> ();
 
 
 	}
 	void OnCollisionEnter2D(Collision2D coll) {
 
 		if (coll.gameObject.tag == "Player") {
-
+			player.Recover (1);
 			StartCoroutine ("DelayedDeath");
 			Instantiate(victimDeathEffect, coll.transform.position, coll.transform.rotation);
 			playerBody.velocity = new Vector2 (playerBody.velocity.x, bounceOnVictim);
-
-
-
+		
 		}
 
 	}
