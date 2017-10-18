@@ -38,7 +38,7 @@ public class EnemyAI : MonoBehaviour {
 
 		if (col.CompareTag ("Player")){
 
-			 Instantiate (bullet, bulletPoint.position, bulletPoint.rotation);
+			Instantiate (bullet, enemyBody.position, enemyBody.transform.rotation);
 
 		}
 

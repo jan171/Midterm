@@ -9,7 +9,7 @@ public class BulletController : MonoBehaviour {
 
 	public float speed;
 	public GameObject bullet;
-
+	public Transform enemyDirection;
 
 
 	private Rigidbody2D bulletBody;
@@ -26,6 +26,11 @@ public class BulletController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+		//if (enemyDirection.rotation.y != 180) {
+
+			//bullet.transform.rotation = Quaternion.Euler(0,180,0);
+
+		//}
 
 		bulletBody = gameObject.GetComponent<Rigidbody2D> ();
 
@@ -33,12 +38,8 @@ public class BulletController : MonoBehaviour {
 
 	}void Update () {
 
-		GetComponent<Rigidbody2D> ().velocity = new Vector2 (speed, 0.0f);
-		if (bulletBody.transform.localScale.x < 0) {
+		GetComponent<Rigidbody2D> ().velocity = new Vector2 (speed, 0);﻿
 
-			speed = -speed;
-		
-		}
 	}
 	void OnTriggerEnter2D (Collider2D other){
 
