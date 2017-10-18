@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour {
 	public AudioClip batCollect;
 	public AudioClip bottleCollect;
 	public AudioClip damageSfx;
-	public AudioClip recoverHealth;
+
 	public AudioClip levelTrigger;
 
 	AudioSource audio;
@@ -30,7 +30,8 @@ public class PlayerController : MonoBehaviour {
 
 	private GameMaster gm;
 
-
+	public GameObject vampireDeathEffect;
+	public AudioClip vampireDeathSound;
 
 	public int curHealth;
 	public int maxHealth = 5;
@@ -38,7 +39,7 @@ public class PlayerController : MonoBehaviour {
 	public bool hurt;
 
 	public GameObject gameOverScreen;
-
+	public GameObject player;
 
 	void Start () {
 
@@ -50,6 +51,8 @@ public class PlayerController : MonoBehaviour {
 		gm = GameObject.FindGameObjectWithTag ("Game Master").GetComponent<GameMaster> (); //get access to GameMaster Script
 
 		gameOverScreen.SetActive (false);
+
+		player.SetActive (true);
 
 	}
 
@@ -83,7 +86,7 @@ public class PlayerController : MonoBehaviour {
 
 		else if (!isGrounded) {
 
-			rigidBody.AddForce (((Vector2.right * speed) * h)/8);
+			rigidBody.AddForce (((Vector2.right * speed) * h)/4);
 
 		}
 
@@ -100,7 +103,7 @@ public class PlayerController : MonoBehaviour {
 
 		} else {
 
-			speed = 400f;
+			speed = 100f;
 
 		}
 		if (curHealth > maxHealth) {
@@ -122,6 +125,7 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D col){
+		
 		if (col.CompareTag ("KillZone")) {
 			transform.position = respawn.transform.position;
 		}
@@ -182,36 +186,29 @@ public class PlayerController : MonoBehaviour {
 	}
 
 
-	public GameObject vampireDeathEffect;
-	public AudioClip vampireDeathSound;
 
 
 	void Death (){
-
-	
 		deathCheck = true;
 
-
-		gameOverScreen.SetActive(true);
-
+	
+		gameOverScreen.SetActive (true);
+		Destroy(audio);
 		if (deathCheck){
-			Debug.Log("PLayer Dead");
-
+			Debug.Log ("Player Dead");
+		
 			Time.timeScale = 0;
-
-		audio.PlayOneShot (vampireDeathSound, 1.0f);
-		Instantiate (vampireDeathEffect, transform.position, transform.rotation);
-		Destroy (gameObject);
-
-
-		Debug.Log ("Player dead");
-
-		SceneManager.LoadScene ("Forest");
-
+	
+	
 		}
+
 	}
 	IEnumerator DelayedRestart() {
-		yield return new WaitForSeconds (1);
+		player.SetActive (false);
+		audio.PlayOneShot (vampireDeathSound, 1.0f);
+		Instantiate(vampireDeathEffect, rigidBody.transform.position, rigidBody.transform.rotation);
+		yield return new WaitForSeconds (2);
+	
 		Death ();
 
 	}

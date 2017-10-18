@@ -1,10 +1,18 @@
 fileFormatVersion: 2
 guid: 99b7a45b1da764a6db6ab717d9e11bd4
-timeCreated: 1507689631
+timeCreated: 1508283217
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - jumpsfx: {fileID: 8300000, guid: 7b7973b766f6c4d48974962bf46da8e1, type: 3}
+  - batCollect: {fileID: 8300000, guid: 9c05000282adc3b469b8a82578ea2dc7, type: 3}
+  - bottleCollect: {fileID: 8300000, guid: 9c05000282adc3b469b8a82578ea2dc7, type: 3}
+  - damageSfx: {fileID: 8300000, guid: f315655b4f2842b49826009191bcd0b9, type: 3}
+  - levelTrigger: {instanceID: 0}
+  - respawn: {fileID: 1109013760263982, guid: 67a285af640984046884d1d54981d085, type: 2}
+  - gameOverScreen: {fileID: 1080852971899018, guid: 6504e15b7c6baed49a52cbf6f1807d28,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

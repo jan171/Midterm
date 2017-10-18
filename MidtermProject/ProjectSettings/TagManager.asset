@@ -13,6 +13,8 @@ TagManager:
   - Bat
   - Enemy2
   - BloodBottle
+  - KillZone
+  - EndGame
   layers:
   - Default
   - TransparentFX

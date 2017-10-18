@@ -61,6 +61,11 @@ public class HealthSystem : MonoBehaviour {
 			healthUI.sprite = emptyHealthBar;
 
 		}
+		if (player.curHealth == -1) {
+
+			healthUI.sprite = emptyHealthBar;
+
+		}
 	}
 
 }
