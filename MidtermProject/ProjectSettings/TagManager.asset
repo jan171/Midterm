@@ -16,6 +16,10 @@ TagManager:
   - KillZone
   - EndGame
   - trigger box
+  - Kill zone
+  - BulletController
+  - Enemy raycast right
+  - BulletContainer
   layers:
   - Default
   - TransparentFX

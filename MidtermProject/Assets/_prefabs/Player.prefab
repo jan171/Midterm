@@ -249,8 +249,10 @@ MonoBehaviour:
   maxHealth: 5
   deathCheck: 0
   hurt: 0
+  gameFinished: 0
   gameOverScreen: {fileID: 0}
-  player: {fileID: 0}
+  finishGameScreen: {fileID: 0}
+  gameWonSfx: {fileID: 0}
 --- !u!114 &114291545849524246
 MonoBehaviour:
   m_ObjectHideFlags: 1

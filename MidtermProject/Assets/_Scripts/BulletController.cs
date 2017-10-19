@@ -22,16 +22,17 @@ public class BulletController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		enemy = GameObject.FindGameObjectWithTag ("Enemy").GetComponent<EnemyAI> ();
+		
 
-		if (enemy.transform.localScale.x < 0) {
 
 			speed = -speed;
 
-		}
+
 		bulletBody = gameObject.GetComponent<Rigidbody2D> ();
 
 		audio = GetComponent<AudioSource> ();
+
+		speed = -speed;
 
 	}void Update () {
 
