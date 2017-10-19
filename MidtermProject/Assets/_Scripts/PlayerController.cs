@@ -132,7 +132,7 @@ public class PlayerController : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D col){
 		
-		if (col.CompareTag ("KillZone")) {
+		if (col.CompareTag ("Kill zone")) {
 			StartCoroutine ("DelayedRestart");
 		}
 
@@ -157,7 +157,7 @@ public class PlayerController : MonoBehaviour {
 
 			audio.PlayOneShot (levelTrigger, 1.0f);
 
-			SceneManager.LoadScene ("Level2");
+			SceneManager.LoadScene ("Level 2");
 
 		}
 		if (col.CompareTag ("EndGame")) {

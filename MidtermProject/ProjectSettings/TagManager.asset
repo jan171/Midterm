@@ -15,6 +15,7 @@ TagManager:
   - BloodBottle
   - KillZone
   - EndGame
+  - trigger box
   layers:
   - Default
   - TransparentFX

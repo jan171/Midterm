@@ -40,7 +40,7 @@ public class BulletController : MonoBehaviour {
 	}
 	void OnTriggerEnter2D (Collider2D other){
 
-		if (other.tag == "Player") { 
+		if (other.tag == "Enemy") { 
 			audio.PlayOneShot (vampireHitSound, 1.0f);			
 
 		}
