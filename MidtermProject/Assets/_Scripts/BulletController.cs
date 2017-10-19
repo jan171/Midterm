@@ -9,11 +9,8 @@ public class BulletController : MonoBehaviour {
 
 	public float speed;
 	public GameObject bullet;
-	public Transform enemyDirection;
-
-
 	private Rigidbody2D bulletBody;
-
+	private EnemyAI enemy;
 
 
 	public AudioClip vampireHitSound;
@@ -25,13 +22,13 @@ public class BulletController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		enemy = GameObject.FindGameObjectWithTag ("Enemy").GetComponent<EnemyAI> ();
 
-		//if (enemyDirection.rotation.y != 180) {
+		if (enemy.transform.localScale.x < 0) {
 
-			//bullet.transform.rotation = Quaternion.Euler(0,180,0);
+			speed = -speed;
 
-		//}
-
+		}
 		bulletBody = gameObject.GetComponent<Rigidbody2D> ();
 
 		audio = GetComponent<AudioSource> ();

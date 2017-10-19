@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LevelChange : MonoBehaviour {
-
 	// Use this for initialization
 	void Start () {
 		
@@ -17,7 +16,8 @@ public class LevelChange : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D other) {
 
-		SceneManager.LoadScene ("Level2");
-
+		if (other.CompareTag("Player")) {
+			SceneManager.LoadScene ("Forest");
+		}
 	}
 }

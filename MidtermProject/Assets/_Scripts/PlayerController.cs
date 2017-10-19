@@ -127,7 +127,7 @@ public class PlayerController : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D col){
 		
 		if (col.CompareTag ("KillZone")) {
-			transform.position = respawn.transform.position;
+			StartCoroutine ("DelayedRestart");
 		}
 
 		if (col.CompareTag("Attack")){
