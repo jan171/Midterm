@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour {
 
 	private Rigidbody2D rigidBody;
 	private Animator anim;
-
+	private SpriteRenderer sprite;
 	public AudioClip jumpsfx;
 	public AudioClip batCollect;
 	public AudioClip bottleCollect;
@@ -37,12 +37,18 @@ public class PlayerController : MonoBehaviour {
 	public int maxHealth = 5;
 	public bool deathCheck; 
 	public bool hurt;
-
+	public  bool gameFinished;
 	public GameObject gameOverScreen;
-	public GameObject player;
+
+	public GameObject finishGameScreen;
+	public AudioClip gameWonSfx;
+	AudioSource winner;
+
+
+
 
 	void Start () {
-
+		
 		rigidBody = gameObject.GetComponent<Rigidbody2D> (); //gives access to RigidBody2D component
 		anim = gameObject.GetComponent<Animator> (); //gives access to Animator component
 
@@ -52,8 +58,8 @@ public class PlayerController : MonoBehaviour {
 
 		gameOverScreen.SetActive (false);
 
-		player.SetActive (true);
-
+	
+	
 	}
 
 	void Update () {
@@ -103,7 +109,7 @@ public class PlayerController : MonoBehaviour {
 
 		} else {
 
-			speed = 100f;
+			speed = 50f;
 
 		}
 		if (curHealth > maxHealth) {
@@ -120,7 +126,7 @@ public class PlayerController : MonoBehaviour {
 			Time.timeScale = 1;
 
 		}
-
+	
 
 	}
 
@@ -146,8 +152,7 @@ public class PlayerController : MonoBehaviour {
 			gm.points += 2;
 			audio.PlayOneShot (bottleCollect, 1.0f);
 		}
-
-
+	
 		if (col.CompareTag ("trigger box")) {
 
 			audio.PlayOneShot (levelTrigger, 1.0f);
@@ -155,7 +160,12 @@ public class PlayerController : MonoBehaviour {
 			SceneManager.LoadScene ("Level2");
 
 		}
+		if (col.CompareTag ("EndGame")) {
 
+			StartCoroutine ("FinishedGame");
+
+
+		}
 }
 
 	void FixedUpdate(){
@@ -204,14 +214,35 @@ public class PlayerController : MonoBehaviour {
 
 	}
 	IEnumerator DelayedRestart() {
-		player.SetActive (false);
+
 		audio.PlayOneShot (vampireDeathSound, 1.0f);
 		Instantiate(vampireDeathEffect, rigidBody.transform.position, rigidBody.transform.rotation);
-		yield return new WaitForSeconds (2);
+		yield return new WaitForSeconds(2);
+
+	
 	
 		Death ();
 
 	}
+	void Finish (){
+		gameFinished = true;
+
+		finishGameScreen.SetActive (true);
+		if (gameFinished) {
+			Debug.Log ("Game Finished");
+
+			if (Input.GetKeyDown (KeyCode.T)) {
+
+				SceneManager.LoadScene ("StartMenu");
+			}
+		}
+	}
+	IEnumerator FinishedGame(){
+		winner.PlayOneShot(gameWonSfx,1.0f);
+		yield return new WaitForSeconds (2);	
+		Finish ();
+	}
+
 
 	public void Damage (int dmg) {
 		audio.PlayOneShot (damageSfx, 1.0f);
